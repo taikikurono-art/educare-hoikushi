@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>保育士さんへ｜educareで一緒に活動しませんか</title>
+<meta name="description" content="JUMP UP・クスカ・おさんぽフォト・そらいろポケット。educareの4つの活動で、保育のチカラを園の外でも活かしませんか。まずは公式LINEから登録。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fffaf2; --paper-2:#f7efe2; --ink:#3b322c; --ink-soft:#6f6258; --line:#e8dccb;
+  --jump:#ee8a2a; --jump-soft:#fdeedd;
+  --kusuka:#5f8b4c; --kusuka-soft:#e7f0de;
+  --photo:#d9737a; --photo-soft:#fbe6e6;
+  --sora:#3f9bd3; --sora-soft:#e0f0fa;
+  --line-green:#06c755;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Zen Maru Gothic",sans-serif; color:var(--ink); background:var(--paper);
+  line-height:1.9; font-size:16px;
+  word-break:auto-phrase; line-break:strict; overflow-wrap:anywhere;
+}
+a{color:inherit}
+img{max-width:100%;display:block}
+.nw{white-space:nowrap}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(255,250,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:900;font-size:20px;letter-spacing:.04em;text-decoration:none}
+.logo small{font-size:11px;font-weight:500;color:var(--ink-soft);margin-left:8px;letter-spacing:.08em}
+.btn-line{display:inline-flex;align-items:center;gap:8px;background:var(--line-green);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:9px 18px;font-size:14px;box-shadow:0 3px 0 #04a347}
+.btn-line:hover{transform:translateY(1px);box-shadow:0 2px 0 #04a347}
+.btn-line svg{width:18px;height:18px}
+
+/* hero */
+.hero{padding:64px 0 40px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.kicker{display:inline-block;font-size:14px;font-weight:700;color:var(--ink-soft);border:1.5px solid var(--ink);border-radius:999px;padding:3px 14px;margin-bottom:20px;background:#fff}
+.hero h1{font-size:clamp(32px,5.4vw,54px);line-height:1.35;font-weight:900;letter-spacing:.02em}
+.hero h1 .mark{background:linear-gradient(transparent 62%, #ffd98a 62%)}
+.hero .lead{margin-top:22px;font-size:17px;color:var(--ink-soft)}
+.hero .cta-row{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn-ghost{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;border:2px solid var(--ink);border-radius:999px;padding:9px 20px;font-size:14px;background:#fff}
+.hero .cta-row .btn-line{padding:12px 24px;font-size:15px}
+.orbit{position:relative;aspect-ratio:1/1;max-width:420px;margin:0 auto;width:100%}
+.orbit .center{position:absolute;inset:30%;border-radius:50%;background:#fff;border:2px dashed var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:clamp(15px,2vw,19px);line-height:1.4}
+.orbit .center small{font-size:11px;font-weight:500;color:var(--ink-soft);letter-spacing:.1em}
+.bubble{position:absolute;width:40%;aspect-ratio:1/1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;font-weight:900;font-size:clamp(13px,1.7vw,16px);line-height:1.3;box-shadow:0 8px 0 rgba(0,0,0,.08);text-decoration:none;transition:transform .2s}
+.bubble:hover{transform:scale(1.04)}
+.bubble svg{width:34%;height:34%;margin-bottom:4px;stroke:#fff}
+.bubble small{font-size:10px;font-weight:500;opacity:.92}
+.b1{top:0;left:0;background:var(--jump)}
+.b2{top:0;right:0;background:var(--kusuka)}
+.b3{bottom:0;left:0;background:var(--photo)}
+.b4{bottom:0;right:0;background:var(--sora)}
+
+/* sections */
+section{padding:72px 0}
+.sec-label{font-size:13px;font-weight:700;letter-spacing:.2em;color:var(--ink-soft)}
+.sec-title{font-size:clamp(24px,3.6vw,34px);font-weight:900;line-height:1.45;margin:6px 0 18px}
+.sec-lead{color:var(--ink-soft);max-width:720px}
+
+/* message */
+.message{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.message .wrap{display:grid;grid-template-columns:220px 1fr;gap:44px;align-items:start}
+.portrait{width:200px;aspect-ratio:1/1;border-radius:50%;background:var(--paper-2);border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:12px;text-align:center;line-height:1.5}
+.message blockquote{font-size:clamp(19px,2.6vw,24px);font-weight:900;line-height:1.6;margin-bottom:18px}
+.message p+p{margin-top:12px}
+.sign{margin-top:18px;font-weight:700}
+.sign small{display:block;font-weight:500;color:var(--ink-soft);font-size:13px}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:36px}
+.svc{background:#fff;border-radius:22px;border:2px solid var(--c);overflow:hidden;display:flex;flex-direction:column}
+.svc-head{background:var(--c);color:#fff;padding:22px 24px 18px;display:flex;gap:16px;align-items:center}
+.svc-icon{flex:none;width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center}
+.svc-icon svg{width:30px;height:30px;stroke:#fff}
+.svc-head .what{font-size:12px;font-weight:700;opacity:.9;letter-spacing:.06em}
+.svc-head h3{font-size:24px;font-weight:900;line-height:1.3}
+.svc-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:14px;flex:1}
+.svc-body > p{color:var(--ink-soft);font-size:15px}
+.role{background:var(--soft);border-radius:14px;padding:14px 16px}
+.role-label{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--c);border-radius:999px;padding:1px 12px;margin-bottom:6px}
+.role strong{display:block;font-size:17px;line-height:1.5}
+.role span{display:block;font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:2px}
+.role + .role{margin-top:-4px}
+.role .role-label{display:inline-block;margin-top:0;color:#fff}
+.meta{list-style:none;font-size:14px;display:grid;gap:4px}
+.meta li{display:flex;gap:10px}
+.meta b{flex:none;width:5.5em;color:var(--c);font-weight:700}
+.svc .partner{font-size:12px;color:var(--ink-soft)}
+.svc.jump{--c:var(--jump);--soft:var(--jump-soft)}
+.svc.kusuka{--c:var(--kusuka);--soft:var(--kusuka-soft)}
+.svc.photo{--c:var(--photo);--soft:var(--photo-soft)}
+.svc.sora{--c:var(--sora);--soft:var(--sora-soft)}
+
+
+/* voices */
+.voices{background:#fff;border-top:1px solid var(--line)}
+.lead-card{margin-top:34px;border:2px solid var(--ink);border-radius:24px;padding:30px 32px;display:grid;grid-template-columns:1fr 1.05fr;gap:36px;background:var(--paper)}
+.person{display:flex;gap:16px;align-items:center;margin-bottom:14px}
+.avatar{flex:none;width:64px;height:64px;border-radius:50%;background:var(--paper-2);border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;color:var(--ink-soft)}
+.lead-card .avatar{width:84px;height:84px;font-size:28px}
+.person h3{font-size:20px;font-weight:900;line-height:1.35}
+.person p{font-size:13px;color:var(--ink-soft);line-height:1.5}
+.lead-card blockquote{font-size:18px;font-weight:900;line-height:1.65;margin:4px 0 12px;padding-left:14px;border-left:4px solid #ffd98a}
+.lead-card .story{font-size:14.5px;color:var(--ink-soft)}
+.lead-card .story+.story{margin-top:10px}
+.tl{list-style:none;position:relative;padding-left:22px}
+.tl::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;border-left:2px dotted var(--ink-soft)}
+.tl li{position:relative;padding:5px 0;font-size:14.5px;line-height:1.6}
+.tl li::before{content:"";position:absolute;left:-21px;top:12px;width:12px;height:12px;border-radius:50%;background:#fff;border:2.5px solid var(--dot,var(--ink))}
+.tl b{display:inline-block;width:3.2em;font-weight:900}
+.tl .j{--dot:var(--jump)}.tl .k{--dot:var(--kusuka)}.tl .p{--dot:var(--photo)}.tl .s{--dot:var(--sora)}
+.v-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
+.v-card{background:var(--paper);border:1.5px solid var(--line);border-radius:20px;padding:22px 22px 24px;display:flex;flex-direction:column}
+.bn{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:13.5px;line-height:1.6;margin:4px 0 12px}
+.bn dt{font-weight:700;font-size:11.5px;color:#fff;background:var(--ink-soft);border-radius:999px;padding:0 9px;height:20px;line-height:20px;margin-top:2px;text-align:center}
+.bn dt.now{background:var(--ink)}
+.bn dt.time{background:#ffd98a;color:var(--ink)}
+.bn dd b{font-weight:700;color:var(--ink)}
+.v-card > p{font-size:14px;color:var(--ink-soft)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:14px}
+.tags{align-items:center}
+.tag{font-size:11.5px;font-weight:700;border-radius:999px;padding:0 10px;line-height:20px;border:1.5px solid var(--tc);color:var(--tc);background:#fff}
+.tag.j{--tc:var(--jump)}.tag.k{--tc:var(--kusuka)}.tag.p{--tc:var(--photo)}.tag.s{--tc:var(--sora)}
+.tag.fill,.tag.main{background:var(--tc);color:#fff}
+.tag.main{font-size:13px;line-height:24px;padding:0 12px 0 4px;display:inline-flex;align-items:center;gap:6px}
+.tag.main::before{content:"メイン";font-size:10px;line-height:18px;background:#fff;color:var(--tc);border-radius:999px;padding:0 7px}
+.v-card.next{background:var(--ink);color:#fff;border:none;justify-content:center;align-items:flex-start;gap:10px}
+.v-card.next h3{font-size:22px;font-weight:900;line-height:1.5}
+.v-card.next p{color:#e9e1d8;font-size:14px}
+.v-card.next .btn-line{margin-top:8px}
+.v-note{margin-top:22px;font-size:13px;color:var(--ink-soft);text-align:center}
+
+/* points */
+.points{background:var(--paper-2)}
+.pt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+.pt{background:#fff;border-radius:18px;padding:24px 22px;border:1.5px solid var(--line)}
+.pt-num{font-size:13px;font-weight:900;color:var(--jump);letter-spacing:.1em}
+.pt h3{font-size:19px;font-weight:900;line-height:1.5;margin:4px 0 8px}
+.pt p{font-size:14.5px;color:var(--ink-soft)}
+
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:36px;position:relative}
+.step{position:relative;padding:0 14px;text-align:center}
+.step:not(:last-child)::after{content:"";position:absolute;top:34px;left:calc(50% + 40px);right:calc(-50% + 40px);border-top:2.5px dotted var(--ink-soft)}
+.step-no{width:68px;height:68px;border-radius:50%;margin:0 auto 14px;background:#fff;border:2.5px solid var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;font-size:24px;line-height:1}
+.step-no small{font-size:9px;letter-spacing:.12em;margin-bottom:3px}
+.step h3{font-size:17px;font-weight:900;line-height:1.5;margin-bottom:6px}
+.step p{font-size:14px;color:var(--ink-soft);text-align:left}
+.flow-note{margin-top:28px;font-size:13px;color:var(--ink-soft);text-align:center}
+
+/* cta */
+.cta{padding:0 0 80px}
+.cta-box{background:var(--ink);color:#fff;border-radius:28px;padding:48px 40px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+.cta-box h2{font-size:clamp(22px,3.2vw,30px);font-weight:900;line-height:1.5}
+.cta-box p{margin-top:12px;color:#e9e1d8;font-size:15px}
+.cta-box .btn-line{margin-top:22px;padding:14px 28px;font-size:16px}
+.qr{background:#fff;border-radius:16px;padding:14px;text-align:center;color:var(--ink);font-size:12px;font-weight:700}
+.qr img{width:140px;height:140px}
+.cta-box .qr p{color:var(--ink);margin-top:6px;font-size:12px}
+
+footer{border-top:1px solid var(--line);padding:32px 0 40px;font-size:13px;color:var(--ink-soft)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+footer a{text-decoration:none;border-bottom:1px solid var(--line)}
+
+@media (max-width:860px){
+  .lead-card{grid-template-columns:1fr;padding:24px 20px;gap:24px}
+  .v-grid{grid-template-columns:1fr}
+  br.pc{display:none}
+  .hero .wrap{grid-template-columns:1fr}
+  .orbit{max-width:340px}
+  .message .wrap{grid-template-columns:1fr;gap:24px}
+  .portrait{width:140px;margin:0 auto}
+  .svc-grid,.pt-grid{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr;gap:26px}
+  .step{display:grid;grid-template-columns:68px 1fr;gap:16px;text-align:left;padding:0}
+  .step-no{margin:0}
+  .step:not(:last-child)::after{top:74px;bottom:-22px;left:33px;right:auto;border-top:none;border-left:2.5px dotted var(--ink-soft)}
+  .cta-box{grid-template-columns:1fr;padding:36px 24px;text-align:center}
+  .qr{display:none}
+}
+@media (max-width:480px){
+  .logo small{display:none}
+  header .btn-line{padding:8px 14px;font-size:13px}
+  section{padding:56px 0}
+  .hero{padding:40px 0 24px}
+  .svc-head{padding:18px 18px 16px}
+  .svc-body{padding:18px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">educare<small>保育士さん募集</small></a>
+    <a class="btn-line" href="https://lin.ee/QgHjbTQ" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.3 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8Z"/></svg>
+      LINEで登録
+    </a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker">保育士さん・幼稚園の先生へ</span>
+      <h1>保育のチカラを、<br><span class="mark">園の外でも。</span></h1>
+      <p class="lead">体操、自然体験、写真、ツアー。<br>educareの4つの活動で、子どもたちと一緒に<br class="pc">「今日も楽しかった」を積み重ねませんか。</p>
+      <div class="cta-row">
+        <a class="btn-line" href="https://lin.ee/QgHjbTQ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.3 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8Z"/></svg>
+          公式LINEで登録する
+        </a>
+        <a class="btn-ghost" href="#services">4つの活動を見る ↓</a>
+      </div>
+    </div>
+    <div class="orbit" aria-label="educareの4つの活動">
+      <div class="center"><small>educare</small>4つの活動</div>
+      <a class="bubble b1" href="#jumpup">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2"/><path d="M4 9.5 12 8l8 1.5"/><path d="M12 8v6l-4 6"/><path d="m12 14 4 6"/></svg>
+        JUMP UP<small>体操教室</small></a>
+      <a class="bubble b2" href="#kusuka">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 20 7-12 4 6"/><path d="m10 20 6-10 6 10"/><path d="M2 20h20"/></svg>
+        クスカ<small>自然体験教室</small></a>
+      <a class="bubble b3" href="#photo">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+        おさんぽ<br>フォト<small>園の写真</small></a>
+      <a class="bubble b4" href="#sora">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3.5"/><path d="M12 2v1.5M5 9H3.5M20.5 9H19M7 4l1 1M17 4l-1 1"/><path d="M5 15h14v3a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/></svg>
+        そらいろ<br>ポケット<small>ツアー</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<section class="message">
+  <div class="wrap">
+    <div class="portrait">写真<br>（後日差し替え）</div>
+    <div>
+      <p class="sec-label">MESSAGE</p>
+      <blockquote>保育士の仕事は、<br>園の中だけのものじゃない。</blockquote>
+      <p>子どもの小さな変化に気づく目。けがをさせない段取り。できた！の瞬間を一緒に喜べる心。保育の現場で積み重ねてきたものは、体操教室でも、自然の中でも、カメラを構えるときにも、そのまま子どもたちの力になります。</p>
+      <p>educareの活動はどれも、「子どもの心の育ちを保育士の目線で見守る」ことを大切にしています。だからこそ、保育士さんと一緒につくりたい。副業という働き方が広がるいま、園の外にも保育士が活躍できる場所を増やしていきたいと考えています。</p>
+      <p class="sign">黒野 大樹（たいき先生）<small>educare 代表／元 私立幼稚園教諭</small></p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <p class="sec-label">4 PROGRAMS</p>
+    <h2 class="sec-title">あなたに合う関わり方が、きっとある。</h2>
+    <p class="sec-lead">教える、引率する、撮る、学ぶ。得意なことや、いまの暮らしに合わせて選べます。ひとつだけでも、いくつかを組み合わせても大丈夫です。</p>
+
+    <div class="svc-grid">
+      <!-- JUMP UP -->
+      <article class="svc jump" id="jumpup">
+        <div class="svc-head">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2"/><path d="M4 9.5 12 8l8 1.5"/><path d="M12 8v6l-4 6"/><path d="m12 14 4 6"/></svg></div>
+          <div><p class="what">子どもの体操教室</p><h3>JUMP&nbsp;UP</h3></div>
+        </div>
+        <div class="svc-body">
+          <p>アスリートを育てるのではなく、「できた！」の積み重ねで心の育ちを見守る体操教室。技の習得をゲームのように楽しめる「JUMPUPクエスト」も取り入れています。</p>
+          <div class="role">
+            <span class="role-label">あなたの役割</span>
+            <strong>スタジオレッスンの講師</strong>
+            <span>3歳〜小学生のクラスで、体操・マット運動などのレッスンを担当します。</span>
+          </div>
+          <ul class="meta">
+            <li><b>場所</b>春日井市・名古屋市中川区のスタジオ</li>
+            <li><b>こんな方に</b>体を動かすのが好き／運動あそびが得意</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- クスカ -->
+      <article class="svc kusuka" id="kusuka">
+        <div class="svc-head">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 20 7-12 4 6"/><path d="m10 20 6-10 6 10"/><path d="M2 20h20"/></svg></div>
+          <div><p class="what">通年制の自然体験教室</p><h3>クスカ</h3></div>
+        </div>
+        <div class="svc-body">
+          <p>駅に集合して、電車やバスでフィールドへ。火をおこしてごはんをつくり、森で遊ぶ日帰りの自然体験を一年通して続けます。年度末の3月には締めくくりのキャンプも。</p>
+          <div class="role">
+            <span class="role-label">あなたの役割</span>
+            <strong>引率スタッフ</strong>
+            <span>子どもたちと一緒に移動し、外あそびや調理を見守ります。スタッフは毎回2名以上。</span>
+          </div>
+          <ul class="meta">
+            <li><b>日程</b>主に土日の日帰り（朝〜夕方）</li>
+            <li><b>こんな方に</b>外あそび・自然が好き／異年齢の関わりが好き</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- おさんぽフォト -->
+      <article class="svc photo" id="photo">
+        <div class="svc-head">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
+          <div><p class="what">園の行事・日常の写真</p><h3>おさんぽフォト</h3></div>
+        </div>
+        <div class="svc-body">
+          <p>保育園・幼稚園の行事や日常を撮影し、保護者へ届ける写真サービス。子どもの「いい顔」を知っている保育士の目線が、そのまま写真の良さになります。</p>
+          <div class="role">
+            <span class="role-label">役割 1</span>
+            <strong>撮影スタッフ</strong>
+            <span>園の行事やおさんぽに同行して、子どもたちを撮影します。</span>
+          </div>
+          <div class="role">
+            <span class="role-label">役割 2</span>
+            <strong>写真の選別・タグ付け</strong>
+            <span>撮影した写真のチェックや、一人ひとりの写り漏れ確認。在宅でもできる作業です。</span>
+          </div>
+          <p class="partner">※ パートナー企業「おさんぽフォト株式会社」が運営しています</p>
+        </div>
+      </article>
+
+      <!-- そらいろポケット -->
+      <article class="svc sora" id="sora">
+        <div class="svc-head">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3.5"/><path d="M12 2v1.5M5 9H3.5M20.5 9H19M7 4l1 1M17 4l-1 1"/><path d="M5 15h14v3a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/></svg></div>
+          <div><p class="what">子どもと大人のツアー</p><h3>そらいろポケット</h3></div>
+        </div>
+        <div class="svc-body">
+          <p>テント泊、スキー、夏の川あそびなど、日帰りから宿泊までのツアーを一年を通して企画しています。</p>
+          <div class="role">
+            <span class="role-label">役割 1</span>
+            <strong>子ども向けツアーの引率スタッフ</strong>
+            <span>経験を積むと、リーダーやイベント責任者として企画から任せていくこともできます。</span>
+          </div>
+          <div class="role">
+            <span class="role-label">役割 2</span>
+            <strong>「おとなの回」に参加者として</strong>
+            <span>保育者向けの特別企画。自分自身が体験して学び、日々の保育に持ち帰ります。</span>
+          </div>
+          <ul class="meta">
+            <li><b>報酬の目安</b>日帰り 10,000円〜／1泊2日 20,000円〜（引率スタッフ）</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VOICES -->
+<section class="voices" id="voices">
+  <div class="wrap">
+    <p class="sec-label">CAREER</p>
+    <h2 class="sec-title">先輩たちの働き方</h2>
+    <p class="sec-lead">園を続けながら。子育てしながら。別の仕事をしながら。<br class="pc">保育の経験を持つ先生たちが、それぞれの形でeducareの活動に関わっています。</p>
+
+    <article class="lead-card">
+      <div>
+        <div class="person">
+          <div class="avatar">た</div>
+          <div><h3>たいき先生（黒野 大樹）</h3><p>educare 代表／元 私立幼稚園教諭（7年）</p></div>
+        </div>
+        <blockquote>運動の専門家でなくても、保育者の目線があれば、子どもが「楽しい」と感じる体操教室はつくれる。</blockquote>
+        <p class="story">幼稚園では保育のかたわら、夕方の体操教室・サッカー教室を担当。はじめの3年は外部講師の補助として学び、4年目からは企画から当日の運営まで任されるようになりました。保育とは違う場面で自分のアイデアを試せたことが、仕事の張り合いになっていました。</p>
+        <p class="story">「保育者それぞれが、自分の得意を活かして挑戦できる場があった方がいい」。その思いから2018年に独立。体操、自然体験、写真と活動を広げながら、同じ思いを持つ保育士の仲間と一緒に歩んできました。</p>
+        <div class="tags"><span class="tag j fill">JUMP UP</span><span class="tag k fill">クスカ</span><span class="tag p fill">おさんぽフォト</span><span class="tag s fill">そらいろポケット</span></div>
+      </div>
+      <ol class="tl">
+        <li><b>2011</b>春日井市の私立幼稚園に入職。体操・サッカー教室を担当</li>
+        <li><b>2018</b>幼稚園を退職し、educareを発足。子ども園で正課体操を初契約</li>
+        <li class="j"><b>2019</b>JUMP&nbsp;UPの前身となる運動教室をスタート</li>
+        <li class="p"><b>2020</b>コロナ禍をきっかけに、カメラマンとしての活動を開始</li>
+        <li class="j"><b>2021</b>小規模保育園と正課体操を契約。バランスボールのレッスンも開始</li>
+        <li class="k"><b>2023</b>自然体験（現クスカ）を名古屋エリアで本格スタート。契約園は4園に</li>
+        <li><b>2025</b>長久手市の保育研修で講師を担当</li>
+        <li class="p"><b>2025</b>おさんぽフォト株式会社を設立</li>
+        <li class="s"><b>2026</b>そらいろポケットを立ち上げ、保育士の仲間を募集中</li>
+      </ol>
+    </article>
+
+    <div class="v-grid">
+      <article class="v-card">
+        <div class="person"><div class="avatar">ま</div><div><h3>まみこ先生</h3><p>ダンス・ベビーヨガ講師</p></div></div>
+        <dl class="bn"><dt>これまで</dt><dd>幼稚園教諭。出産・子育てのタイミングで退職</dd><dt class="now">いま</dt><dd>保育園・学童でダンス、0〜2歳のベビーヨガを担当</dd><dt class="time">活動日</dt><dd><b>平日の午前・夕方</b>（週3日）</dd></dl>
+        <p>高校まで打ち込んだダンスを活かし、子育てしながらダンス教室を開講。趣味だったヨガも資格を取り、幼稚園での経験を活かしたベビーヨガの活動を始めました。</p>
+        <div class="tags"><span class="tag j main">JUMP UP</span></div>
+      </article>
+      <article class="v-card">
+        <div class="person"><div class="avatar">よ</div><div><h3>よしえ先生</h3><p>バランスボール講師</p></div></div>
+        <dl class="bn"><dt>これまで</dt><dd>公立保育園に20年以上勤務</dd><dt class="now">いま</dt><dd>小規模保育園4園でバランスボールレッスン</dd><dt class="time">活動日</dt><dd><b>平日の午前</b>（週2日）</dd></dl>
+        <p>自宅にスタジオを構え、大人向けのバランスボールレッスンをしていたところで黒野と出会い、保育園でのレッスンをスタート。いまは黒野と一緒に4園を担当しています。</p>
+        <div class="tags"><span class="tag j main">JUMP UP</span></div>
+      </article>
+      <article class="v-card">
+        <div class="person"><div class="avatar">き</div><div><h3>きょうすけ先生</h3><p>体操講師・引率スタッフ</p></div></div>
+        <dl class="bn"><dt>これまで</dt><dd>私立幼稚園教諭を10年</dd><dt class="now">いま</dt><dd>放課後等デイサービスで療育に携わりながら、平日夕方にJUMP&nbsp;UP講師</dd><dt class="time">活動日</dt><dd><b>平日の夕方</b>（週2日）</dd></dl>
+        <p>学童や地域のスタジオでレッスンを担当。体操部の経験を活かして、難しい技にも挑む小学生を指導しています。療育の経験から、一人ひとりの個性に合わせた関わりが得意です。</p>
+        <div class="tags"><span class="tag j main">JUMP UP</span><span class="tag k">クスカ</span><span class="tag s">そらいろポケット</span></div>
+      </article>
+      <article class="v-card">
+        <div class="person"><div class="avatar">ひ</div><div><h3>ひとえ先生</h3><p>カメラマン・引率スタッフ</p></div></div>
+        <dl class="bn"><dt>これまで</dt><dd>小規模保育園に8年勤務</dd><dt class="now">いま</dt><dd>公立保育園の常勤パートをしながら、おさんぽフォトのカメラマンに</dd><dt class="time">活動日</dt><dd><b>平日の特定日</b>（月1〜2回）＋土日の活動</dd></dl>
+        <p>園での仕事を続けつつ、土日はクスカやシーズンイベントの引率にも積極的に参加。保育士の目線で、子どもたちの「いい顔」を撮っています。</p>
+        <div class="tags"><span class="tag p main">おさんぽフォト</span><span class="tag k">クスカ</span><span class="tag s">そらいろポケット</span></div>
+      </article>
+      <article class="v-card">
+        <div class="person"><div class="avatar">さ</div><div><h3>さとみ先生</h3><p>引率スタッフ</p></div></div>
+        <dl class="bn"><dt>これまで</dt><dd>私立幼稚園・公立保育園であわせて<span class="nw">約15年</span></dd><dt class="now">いま</dt><dd>大手保険会社に勤めながら、週末に自然体験の引率</dd><dt class="time">活動日</dt><dd><b>土日</b>（月1〜2回）</dd></dl>
+        <p>学生時代は黒野と同じ野外活動ボランティアグループに所属し、キャンプやスキーの引率経験が豊富。いまはクスカとシーズンイベントの引率を担当しています。</p>
+        <div class="tags"><span class="tag k main">クスカ</span><span class="tag s main">そらいろポケット</span></div>
+      </article>
+      <article class="v-card next">
+        <p style="font-size:12px;letter-spacing:.2em;font-weight:700">NEXT</p>
+        <h3>次は、あなたの番。</h3>
+        <p>得意なこと、好きなこと、いまの暮らし。あなたらしい関わり方を一緒に見つけましょう。</p>
+        <a class="btn-line" href="https://lin.ee/QgHjbTQ" target="_blank" rel="noopener">公式LINEで登録する</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- POINTS -->
+<section class="points">
+  <div class="wrap">
+    <p class="sec-label">POINT</p>
+    <h2 class="sec-title">はじめてでも、ひとりにしません。</h2>
+    <div class="pt-grid">
+      <div class="pt">
+        <p class="pt-num">01</p>
+        <h3>まずは顔を合わせてから</h3>
+        <p>知らない人といきなり現場、は不安なもの。はじめにオンラインで顔合わせをして、educareの考え方やほかの先生たちを知ってもらいます。</p>
+      </div>
+      <div class="pt">
+        <p class="pt-num">02</p>
+        <h3>最初の現場はペアで</h3>
+        <p>はじめての参加は、経験のあるスタッフと一緒に動く「研修参加」から。ひとりで持ち場を任されることはありません。</p>
+      </div>
+      <div class="pt">
+        <p class="pt-num">03</p>
+        <h3>いまの暮らしに合わせて</h3>
+        <p>平日に週2〜3日の先生も、土日に月1〜2回の先生もいます。本業のお休みの日や子育ての合間など、できる範囲から関われます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section id="flow">
+  <div class="wrap">
+    <p class="sec-label">FLOW</p>
+    <h2 class="sec-title">参加までの流れ</h2>
+    <div class="flow">
+      <div class="step">
+        <div class="step-no"><small>STEP</small>1</div>
+        <div><h3>公式LINEで登録</h3><p>下のボタンから友だち追加して、「保育士登録」とメッセージを送ってください。</p></div>
+      </div>
+      <div class="step">
+        <div class="step-no"><small>STEP</small>2</div>
+        <div><h3>オンライン顔合わせ会</h3><p>少人数のオンラインで、活動の内容や大切にしていることをお話しします。</p></div>
+      </div>
+      <div class="step">
+        <div class="step-no"><small>STEP</small>3</div>
+        <div><h3>はじめての研修参加</h3><p>興味のある活動に、経験のあるスタッフとペアで参加します。</p></div>
+      </div>
+      <div class="step">
+        <div class="step-no"><small>STEP</small>4</div>
+        <div><h3>自分のペースで活躍</h3><p>2回目からはスタッフとして。やりたいことに合わせてステップアップも。</p></div>
+      </div>
+    </div>
+    <p class="flow-note">※ 活動によって、研修の内容や進め方は少しずつ異なります。</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="wrap">
+    <div class="cta-box">
+      <div>
+        <h2>まずは、話を聞いてみるだけでも。</h2>
+        <p>登録したからといって、すぐに参加が決まるわけではありません。<br>気になる活動があれば、気軽にメッセージをください。</p>
+        <a class="btn-line" href="https://lin.ee/QgHjbTQ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.3 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8Z"/></svg>
+          公式LINEで登録する
+        </a>
+      </div>
+      <div class="qr"><img src="line-qr.png" alt="公式LINE QRコード"><p>スマホで読み取り</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© educare ／「今日も楽しかった」を積み重ねる</p>
+    <nav>
+      <a href="https://educare-nagoya.com/">educare トップ</a>
+      <a href="https://jumpup-nagoya.com/">JUMP&nbsp;UP</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
